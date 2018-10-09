@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Class Building">
+  <ClassDiagramComponents>
+    <Class name="Buildings" package="" visibility="public" xPosition="469.0" yPosition="5.0">
+      <Fields>
+        <Field name="x" type="Double" visibility="private"/>
+        <Field name="y" type="Double" visibility="private"/>
+        <Field name="Health" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="Collapse" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Tower" package="" visibility="public" xPosition="226.0" yPosition="338.0">
+      <Fields>
+        <Field name="damage" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="attack" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Barracks" package="" visibility="public" xPosition="567.0" yPosition="338.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="spawn" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Wall" package="" visibility="public" xPosition="397.0" yPosition="338.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Nexus " package="" visibility="public" xPosition="51.0" yPosition="338.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="Fulldestruction" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Mines" package="" visibility="public" xPosition="1097.0" yPosition="5.0">
+      <Fields>
+        <Field name="maxResource" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="upgrade" returnType="void" visibility="public"/>
+        <Method name="end" returnType="void" visibility="public"/>
+        <Method name="increase" returnType="int" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="StoneMine" package="" visibility="public" xPosition="989.0" yPosition="319.0">
+      <Fields>
+        <Field name="stone" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="IronMine" package="" visibility="public" xPosition="1164.0" yPosition="198.0">
+      <Fields>
+        <Field name="iron" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="WoodMine" package="" visibility="public" xPosition="1164.0" yPosition="319.0">
+      <Fields>
+        <Field name="wood" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="GoldMine" package="" visibility="public" xPosition="989.0" yPosition="198.0">
+      <Fields>
+        <Field name="gold" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Rocks" package="" visibility="public" xPosition="785.0" yPosition="385.0">
+      <Fields>
+        <Field name="x" type="double" visibility="private"/>
+        <Field name="y" type="double" visibility="private"/>
+        <Field name="Health" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="end" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Iron" package="" visibility="public" xPosition="1133.0" yPosition="591.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Wood" package="" visibility="public" xPosition="958.0" yPosition="591.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Stone" package="" visibility="public" xPosition="785.0" yPosition="591.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="GoldArea" package="" visibility="public" xPosition="616.0" yPosition="591.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="Iron" target="Rocks"/>
+    <IsRelation name="is" source="StoneMine" target="Mines"/>
+    <IsRelation name="is" source="GoldMine" target="Mines"/>
+    <IsRelation name="is" source="GoldArea" target="Rocks"/>
+    <IsRelation name="is" source="Stone" target="Rocks"/>
+    <IsRelation name="is" source="Wood" target="Rocks"/>
+    <IsRelation name="is" source="Wall" target="Buildings"/>
+    <IsRelation name="is" source="Barracks" target="Buildings"/>
+    <IsRelation name="is" source="Nexus " target="Buildings"/>
+    <IsRelation name="is" source="IronMine" target="Mines"/>
+    <IsRelation name="is" source="Tower" target="Buildings"/>
+    <IsRelation name="is" source="WoodMine" target="Mines"/>
+    <IsRelation name="is" source="Mines" target="Buildings"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
